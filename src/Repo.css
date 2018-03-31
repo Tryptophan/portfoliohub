@@ -1,0 +1,71 @@
+.Repos {
+  text-align: center;
+}
+
+/* .container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 970px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.col-md-6 {
+  grid-column: span 6;
+} */
+
+.Repo {
+  width: 80%;
+  display: inline-block;
+  margin-bottom: 10vh;
+  text-align: left;
+  /* margin: 0 5% 10vh 0; */
+}
+
+.RepoBox {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: lightblue;
+  margin-bottom: 2vh;
+}
+
+.RepoHeader {
+  display: block;
+  margin-bottom: 5vh;
+  overflow: hidden;
+}
+
+.RepoTitle {
+  width: 80%;
+  float: left;
+}
+
+.RepoInfo {
+  width: 10%;
+  text-align: right;
+  float: right;
+}
+
+.RepoDescription {
+  clear: both;
+  width: 100%;
+}
+
+.RepoZip {
+  float: right;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.RepoZip a:hover {
+  text-decoration: underline;
+}

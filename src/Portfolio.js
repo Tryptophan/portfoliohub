@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import Repo from './Repo';
+
 import './Portfolio.css';
 
 class Portfolio extends Component {
@@ -47,22 +49,7 @@ class Portfolio extends Component {
         <div className='Repos'>
           {this.state.repos && this.state.repos.map(repo => {
             return (
-              <div className='Repo'>
-                <a href={repo.html_url}>
-                  <div className='RepoBox'>
-                    <div className='RepoHeader'>
-                      <span className='RepoTitle'>{repo.name}</span>
-                      <span className='RepoInfo'>{repo.forks} | {repo.language}</span>
-                    </div>
-                    <div className='RepoDescription'>{repo.description}</div>
-                  </div>
-                </a>
-                <div className='RepoZip'>
-                  <a href={'https://github.com/' + repo.owner.login + '/' + repo.name + '/archive/' + repo.default_branch + '.zip'}>
-                    Download -->
-                </a>
-                </div>
-              </div>
+              <Repo repo={repo} />
             );
           })}
         </div>
