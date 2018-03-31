@@ -1,4 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+
+import * as Color from './Color';
+
 import './Repo.css';
 
 class Repo extends Component {
@@ -6,7 +9,7 @@ class Repo extends Component {
     return (
       <div className='Repo'>
         <a href={this.props.repo.html_url}>
-          <div className='RepoBox'>
+          <div className='RepoBox' style={{ backgroundColor: Color.SECONDARY }}>
             <div className='RepoHeader'>
               <span className='RepoTitle'>{this.props.repo.name}</span>
               <span className='RepoInfo'>{this.props.repo.forks} | {this.props.repo.language}</span>

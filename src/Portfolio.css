@@ -1,9 +1,9 @@
 .Header {
   text-align: center;
-  margin: 20vh 0 20vh 0;
+  padding: 20vh 0 20vh 0;
 }
 
 .Header img {
   border-radius: 100%;
-  border: 2px solid red;
+  border: 2px solid black;
 }
