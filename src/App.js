@@ -6,6 +6,8 @@ import Portfolio from './Portfolio';
 
 import * as Color from './Color';
 
+import 'bulma/css/bulma.css';
+import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
 
 class App extends Component {

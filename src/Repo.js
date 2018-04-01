@@ -19,7 +19,7 @@ class Repo extends Component {
         </a>
         <div className='RepoZip'>
           <a href={'https://github.com/' + this.props.repo.owner.login + '/' + this.props.repo.name + '/archive/' + this.props.repo.default_branch + '.zip'}>
-            Download -->
+            Download 
           </a>
         </div>
       </div>
